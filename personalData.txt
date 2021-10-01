@@ -1,0 +1,13 @@
+@startuml
+class PersonalData {
+        - java.time.LocalDate:birthDate
+        - String:address
+        - long:ssn
+        + PersonalData(java.time.LocalDate,long)
+        + PersonalData(int,int,int,long)
+        + getBirthDate():java.time.LocalDate
+        + getAddress():String
+        + getSSN():long
+        + setAddress(String):void
+    }
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+class Student {
+        - String:name
+        - long:id
+        - double:gpa
+        - PersonalData:pd
+        + Student(String,long,double,PersonalData)
+        + getName():String
+        + getID():long
+        + getGPA():double
+        + getPersonalData():PersonalData
+        + toString():String
+    }
+@enduml

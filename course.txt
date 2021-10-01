@@ -1,0 +1,21 @@
+@startuml
+class Course {
+        - String:name
+        - Student[]:students
+        - int:capacity
+        - int:numberOfStudent
+        + Course(String)
+        + Course(String, int)
+        + getNumberOfStudents():int
+        + getCourseName():String
+        + getStudents():Student[]
+        + addStudent(Student):boolean
+        + dropStudent(Student):boolean
+        + increaseCapacity():void 
+        + getBestStudent():Student
+        + getYoungestStudent():Student
+        + clear():void
+        + list():void
+        + toString():String
+    }
+@enduml
